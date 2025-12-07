@@ -6,13 +6,21 @@
 
 .container{
     /* height: 100vh; */
-    width:100vw;
-    background-color: #faf2ef;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    width:100%;
+background-color: aqua;
+     /* max-width: 1440px; */
    
 }
+.main{
+    /* max-width: 1440px; */
+      background-color: #faf2ef;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    /* background-color: blueviolet; */
+}
+.control-width{
 
+}
 .header{
 
     height: 8vh;
@@ -67,16 +75,18 @@
 .hero-section{
     display: flex;
     height: 50vh;
+    /* flex-wrap:wrap-reverse; */
     /* background-color: aquamarine; */
 }
 .text{
-    width: 60%;
+    width: 51%;
     /* background-color: blue; */
     height: 100%;
+        /* font-family: 'sans-serif'; */
 }
 
 .hero-img{
-    width: 40%;
+    width: 49%;
     /* background-color: chartreuse; */
     display: flex;
     align-items: end;
@@ -84,7 +94,7 @@
 
 
 .text h5 {
-  letter-spacing: 2px;
+  letter-spacing: 10px;
   color: #ff7f5f;
 }
 
@@ -112,3 +122,181 @@ width: 90px;
 height: 30px;
 
 }
+.middle-hero{
+      background-color:white; 
+        padding-left: 5rem;
+    padding-right: 5rem;
+
+}
+.middle-section{
+    height: 20vh;
+    width:97%;
+
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    /* gap: 170px; */
+    align-items: center;
+      
+
+}
+
+.items{
+    height:10vh ;
+    width: 10vh;
+    background-color: #faf2ef;
+    border-radius: 50%;
+      /* line-height: 1.2; */
+    /* border:2px solid black; */
+}
+
+.items-text p{
+    /* background-color: aquamarine; */
+text-align: center;
+margin-top: .5rem;
+}
+
+.products{
+    /* background-color: chocolate; */
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* width: 100%; */
+}
+.card-container{
+    /* background-color: aquamarine; */
+display: flex;
+justify-content: space-between;
+align-items: center;
+   height: 60vh;
+
+
+}
+.card{
+ height: 60vh;
+     width: 30vh;
+/* background-color: #ff7f5f; */
+display: flex;
+flex-direction: column;
+align-items: center;
+/* justify-content: space-around; */
+}
+.card-img{
+ height: 50vh;
+    width: 30vh;
+        background-color: #f8f8f8;
+        display: flex;
+     align-items: end;
+        flex-direction: column;
+}
+.card-img button{
+    background-color: #ff7f5f;
+    color: #f8f8f8;
+    border: none;
+    width: 3vw;
+}
+#fourth{
+    display: none;
+}
+
+.banner{
+      background-color: #faf2ef;
+     height: 60vh;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+.banner-text{
+    /* background-color: aqua; */
+ display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    gap:10px;
+    height: 40%;
+}
+.card-text{
+ color:#ff7f5f;
+}
+.banner-button{
+    color: #ff7f5f;
+}
+
+.border {
+  width: 100%;
+  height: 1.5px;
+  background-color: #ccc;
+  margin-top: 8px;
+}
+.cart{
+    margin-top: .5rem;
+}
+.product-heading{
+    font-size: 1.8em;
+}
+
+.footer{
+    /* background-color: aqua; */
+    height: 30vh;
+         /* background-color:white;  */
+        padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+  
+}
+.footer-start{
+    /* background-color: blueviolet; */
+    height: 20vh;
+    display: flex;
+        justify-content: space-between;
+}
+.footer-items{
+    /* background-color: #ff7f5f; */
+              height: 16vh;
+            
+              width: 40vh;
+             
+      
+}
+.footer-items h2{
+       font-family: 'Berkshire Swash', cursive;
+              font-size: 1.5rem;
+          
+
+}
+.special{
+display:flex;
+align-items: start;
+            
+              flex-direction:column;
+              justify-content:space-evenly;
+}
+.footer-items li{
+    list-style: none;
+}
+.footer-end{
+    /* background-color: aquamarine; */
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+.footer-items button{
+    color: white;
+    background-color: #ff7f5f;
+    border: none;
+    width: 8vw;
+    height: 5vh;
+}   
+.form{
+    display: flex;
+}
+input{
+        height: 5vh;
+        border: none;
+}
+
