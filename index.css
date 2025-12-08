@@ -241,7 +241,7 @@ align-items: center;
 .footer{
     /* background-color: aqua; */
     height: 30vh;
-         /* background-color:white;  */
+         background-color:white; 
         padding-left: 5rem;
     padding-right: 5rem;
     display: flex;
@@ -298,5 +298,40 @@ align-items: start;
 input{
         height: 5vh;
         border: none;
+}
+
+@media (max-width: 1030px) {
+  .middle-hero {
+    position: relative; 
+  }
+
+  .middle-section {
+    /* display: none; */
+  }
+
+
+  .banner {
+    position: absolute;
+    top:2%;         
+     left: 50%; 
+    transform: translateX(-50%); 
+
+    width: 90%;
+    height: 20%;
+  display: flex;
+  justify-content: center;  
+  align-items: center;   
+
+
+   
+  }
+
+  
+  .products {
+    margin-top: 0%; 
+  }
+  #fourth{
+    display: flex;
+  }
 }
 
