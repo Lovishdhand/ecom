@@ -124,15 +124,19 @@ height: 30px;
 }
 .middle-hero{
       background-color:white; 
+      /* background-color:blue;  */
         padding-left: 5rem;
     padding-right: 5rem;
+  display: flex;
+flex-direction: column;
+    
 
 }
 .middle-section{
     height: 20vh;
     width:97%;
 
-    /* background-color: blue; */
+    /* background-color:aqua; */
     display: flex;
     justify-content: space-between;
     /* gap: 170px; */
@@ -158,21 +162,30 @@ margin-top: .5rem;
 
 .products{
     /* background-color: chocolate; */
-    height: 70vh;
+    /* height: 70vh; */
+ 
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
     /* width: 100%; */
+}
+.heading{
+       width: 70%;
 }
 .card-container{
     /* background-color: aquamarine; */
 display: flex;
 justify-content: space-between;
+/* gap: 50px; */
 align-items: center;
+flex-wrap: wrap;
    height: 60vh;
 
 
+
 }
+
 .card{
  height: 60vh;
      width: 30vh;
@@ -246,6 +259,7 @@ align-items: center;
     padding-right: 5rem;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   
 }
 .footer-start{
@@ -253,6 +267,7 @@ align-items: center;
     height: 20vh;
     display: flex;
         justify-content: space-between;
+          flex-wrap: wrap; 
 }
 .footer-items{
     /* background-color: #ff7f5f; */
@@ -302,36 +317,60 @@ input{
 
 @media (max-width: 1030px) {
   .middle-hero {
-    position: relative; 
-  }
-
-  .middle-section {
-    /* display: none; */
-  }
-
-
-  .banner {
-    position: absolute;
-    top:2%;         
-     left: 50%; 
-    transform: translateX(-50%); 
-
-    width: 90%;
-    height: 20%;
+    /* position: relative;  */
   display: flex;
-  justify-content: center;  
-  align-items: center;   
-
-
-   
+/* flex-direction: column; */
   }
+  .heading{
+       width: 100%;
+}
+.banner{
+        order:-1;
+         width: 100%;
+    height: 20%;
+}
+  .middle-section {
+    display: none;
+    
+  }
+
+
 
   
   .products {
     margin-top: 0%; 
+    display: flex;
+    flex-direction: column;
   }
   #fourth{
     display: flex;
   }
 }
 
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+  }
+.card{
+    width: 100%;
+}
+  .text, .hero-img {
+    width: 100%;
+  }
+
+  .hero-img img {
+    width: 100%;
+    height: auto;
+  }
+    .footer-start {
+    flex-direction: column;  
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: aqua;
+  }
+
+  .footer-items {
+    width: 100%;
+  }
+}
