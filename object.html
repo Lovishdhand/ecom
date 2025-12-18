@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Object-Fit Example</title>
+<style>
+  .container {
+    display: flex;
+    gap: 10px;
+  }
+
+  .box {
+    width: 200px;
+    height: 150px;
+    border: 2px solid #333;
+    overflow: hidden;
+  }
+
+  .box img {
+    width: 100%;
+    height: 100%;
+    /* We'll set object-fit differently for each box */
+  }
+
+  .fill img {
+    object-fit: fill;
+  }
+
+  .contain img {
+    object-fit: contain;
+    background-color: lightgray; /* shows empty space if any */
+  }
+
+  .cover img {
+    object-fit: cover;
+  }
+</style>
+</head>
+<body>
+
+<h2>Object-Fit Demo</h2>
+<div class="container">
+  <div class="box fill">
+    <!-- <p>Fill</p> -->
+    <img src="marissa-grootes-D4jRahaUaIc-unsplash-removebg-preview.png" alt="Fill">
+  </div>
+  <div class="box contain">
+    <!-- <p>Contain</p> -->
+    <img src="marissa-grootes-D4jRahaUaIc-unsplash-removebg-preview.png" alt="Contain">
+  </div>
+  <div class="box cover">
+    <!-- <p>Cover</p> -->
+    <img src="marissa-grootes-D4jRahaUaIc-unsplash-removebg-preview.png" alt="Cover">
+  </div>
+</div>
+
+</body>
+</html>
